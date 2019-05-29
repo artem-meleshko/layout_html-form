@@ -34,23 +34,27 @@
     <!--Color-->
 
     <fieldset>
-      <legend>An interesting fact about you!</legend>
-      <label>Do you love cats?
-        <input type="radio" name="interesting-fact" value="Yes">Yes
-        <input type="radio" name="interesting-fact" value="No"> No
+      <legend>An interesting fact about you</legend>
+      <label for="yes" id="cats_line">Do you love cats?
+        <label for="yes">
+          <input type="radio" name="cats" id="yes" value="yes"> Yes
+        </label>
+        <label for="no">
+          <input type="radio" id="no" name="cats" value="no"> No
+        </label>
       </label>
-      <label>What is your favorite color? <input type="color" name="interesting-fact" value="#000"></label>
-      <label>What time do you go to bed? <input type="time" name="interesting-fact" step="3"></label>
-      <label>What are your favorite brand of cars?
-        <select name="interesting-fact" size="4">
-          <option value="bmw">BMW</option>
-          <option value="audi">Audi</option>
-          <option value="lada">Lada</option>
+      <label for="color">What is your favorite color? <input type="color" id="color" name="color"></label>
+      <label for="time">What time do you go to bed? <input type="time" name="time" id="time" step="3"></label>
+      <label for="cars">
+        What are your favorite brand of cars?
+        <select name="cars" id="cars" size="4">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
         </select>
       </label>
-      <label>How do you rate our work? <input type="range" name="interesting-fact" min="0" max="10" value="0"></label>
+      <label for="rate">How do you rate our work? <input type="range" min="0" max="10" id="rate" name="rate" value="0"></label>
     </fieldset>
-
     <!--Textarea-->
     <fieldset>
       <legend>Additional info:</legend>
